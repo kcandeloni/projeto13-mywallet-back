@@ -9,7 +9,6 @@ async function validaSign_in(req, res, next) {
         return;
     }
     
-    res.locals.user = req.body;
     next();
 }
 

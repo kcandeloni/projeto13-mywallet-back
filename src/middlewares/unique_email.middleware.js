@@ -12,8 +12,6 @@ async function unique_email (req, res, next) {
         return;
     }
     
-    res.locals.user = req.body;
-    
     next();
 }
 

@@ -4,7 +4,7 @@ import conection from '../db/db.js';
 let db = await conection();
 
 async function createUser (req, res) {
-    const { name, email, password} = res.locals.user;
+    const { name, email, password} = req.body;
 
     const passwordHash = bcrypt.hashSync(password, 10);
 

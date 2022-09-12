@@ -3,7 +3,7 @@ import login from '../controllers/sign_in.controllers.js';
 import createUser from '../controllers/sign_up.controllers.js';
 import validaSign_in from '../middlewares/sign_inValidation.middleware.js';
 import validaSign_up from '../middlewares/sign_upValidation.middleware.js';
-import unique_email from '../middlewares/unique_emailValidation.middleware.js';
+import unique_email from '../middlewares/unique_email.middleware.js';
 
 const loginRouter = express.Router();
 loginRouter.post('/sign-up', validaSign_up, unique_email, createUser);
