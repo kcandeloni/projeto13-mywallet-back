@@ -1,6 +1,8 @@
-import express from "express";
-import meus_dados from "./meus_dados.js";
+import express from 'express';
+import loginRouter from './login.routers.js';
+import my_data from './my_data.routers.js';
 
 const router = express.Router();
-router.use(meus_dados);
+router.use(loginRouter);
+router.use(my_data);
 export default router;

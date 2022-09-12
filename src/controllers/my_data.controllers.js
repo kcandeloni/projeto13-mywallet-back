@@ -1,5 +1,4 @@
-
-export async function meus_dados (req, res) {
+async function my_data (req, res) {
     const user = res.locals.user;
 
     try {
@@ -10,3 +9,5 @@ export async function meus_dados (req, res) {
         res.sendStatus(500);  
     }
 };
+
+export default my_data;
